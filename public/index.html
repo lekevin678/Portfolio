@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <meta charset="utf-8" />
+    <title> KEVIN LE | Home</title>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+
+            <header class="top-bar">
+                <div class="main-name"> <a href="/"> KEVIN LE </a> </div>
+                <div class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"> <a href="/projects"> Projects </a> </li>
+                        <li class="nav-item"> <a href="/contact"> Contact Me </a> </li>
+                    </ul>
+                </div>
+            </header>
+        
+            <a href="#content">
+                <div class="main-section"> 
+                    <span class="main-picture"></span>
+                    <h1 class="main-content name"> Kevin Le</h1>
+                    <h2 class="main-content info"> Student at OSU (Anticipated Graduation of Summer 2022)</h2>
+                    <h2 class="main-content info">Major in Computer Science | Minor in Mathematics</h2>
+                </div>
+            </a>
+            
+            <section id= "content">
+                <h1 class="content-title"> About Me </h1>
+
+                <div class="content-main">
+                    For me, computer science is like solving a puzzle; given a final product, use your knowledge and skills to build the parts to get there. And just like a puzzle, after all the hard work you have put in, the feeling when you see what you have created is pure satisfaction and joy. <br><br>
+
+                    I am a student at Oregon State University with an anticipated graduation of Summer 2022. I am currently working on my Bachelor's degree in computer science (specializing in cybersecurity) with a minor in mathematics, and I currently have a 3.84 GPA.<br><br>
+
+                    Computer science caught my attention because of its problem solving aspect. I enjoy the process of finding and creating that one algorithm that will solve my problem efficiently. I find myself entranced in my work as I am coding to finish the project. And I love the feeling of satisfaction when I finally get to see my work run successfully. <br><br>
+
+                    On the technical side, I have excelled in courses that focused on algorithms, computer architecture, data structures, databases, computer networks, operating systems, and web development. Also, by the end of the summer of 2021, I will have completed coursework related to Cybersecurity; which includes cryptography, network security, and computer forensics. I have skills and experience in C/C++, Java, Javascript, Python, Github, SQL, HTML/CSS, and technical troubleshooting.<br><br>
+
+                    My skills in programming are on display in my projects. The <a href="/projects" style="color: #3e76c9;font-style: italic;"> projects </a> section contains my coursework and personal projects that I have completed. My favorite personal project of mine is Health is Wealth. In this project, I was able to use my programming skills that I have accumulated throughout the years to solve a problem that I (and maybe many others) had in finding healthy foods that match my health goals. <br><br>
+
+                    I am excited for any opportunities that come my way. <a href="/contact" style="color: #3e76c9;font-style: italic;"> Let's get in touch! </a> <br><br><br>
+
+                    Kevin Le (He/Him/His) <br>
+                    lekevin678@gmail.com
+
+                </div>
+
+            </section>
+        </div>
+
+        <footer class="footer">
+            <li class="footer-item"> lekevin678@gmail.com </li>
+            <li class="footer-item"> <a href="https://github.com/lekevin678" target="_blank"> GitHub </a> </li>
+            <li class="footer-item"> <a href="https://www.linkedin.com/in/kevin-le-18483a175/" target="_blank"> LinkedIn</a> </li>
+        </footer>
+
+     </div>
+</body>
+</html>

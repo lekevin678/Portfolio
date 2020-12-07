@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="style.css" media="screen"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+    <title> KEVIN LE | Projects</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+    </script>
+    <script src="scripts.js" charset="utf-8" defer></script>
+
+</head>
+<body onload="start()">
+    <div class="page-container">
+        <div class="projects-content-wrap">
+
+            <header class="top-bar">
+                <div class="main-name"> <a href="/"> KEVIN LE </a> </div>
+                <div class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"> <a href="/projects" style="text-decoration: underline;"> Projects </a> </li>
+                        <li class="nav-item"> <a href="/contact"> Contact Me </a> </li>
+                    </ul>
+                </div>
+            </header>
+
+            <a href="#p-content">
+                <div class="main-section"> 
+                    <h1 class="main-content name"> Projects</h1>
+                    <h2 class="main-content info"> My coursework and related projects that showcase my programming skills in various aspects of the computer science field.</h2>
+                </div>
+            </a>
+
+            <section id= "p-content" class="content-projects">
+                <div class="overlay"></div>
+                <div class="projects-picture"></div>
+                <div class="project-side-bar">
+                    <ul class="projects-list">
+                        <li>Lets Get Started &nbsp;&nbsp;<i class="fas fa-chevron-right fa-xs" s></i> <div class="arrow-left" style="top: 13px;"></div> </li>
+                        <li>Health is Wealth&nbsp;&nbsp; <i class="fas fa-chevron-right fa-xs"></i>   <div class="arrow-left"></div></li>
+                        <li>Movie Vault&nbsp;&nbsp; <i class="fas fa-chevron-right fa-xs"></i>  <div class="arrow-left"></div></li>
+                        <li>Intro to Security&nbsp;&nbsp; <i class="fas fa-chevron-right fa-xs"></i>  <div class="arrow-left"></div></li>
+                        <li>Operating Systems I&nbsp;&nbsp; <i class="fas fa-chevron-right fa-xs"></i>  <div class="arrow-left"></div></li>
+                        <li>More&nbsp;&nbsp; <i class="fas fa-chevron-right fa-xs"></i>  <div class="arrow-left"></div></li>
+                    </ul>
+
+                     <footer class="projects-footer">
+                    <li class="footer-item"> lekevin678@gmail.com </li>
+                    <li class="footer-item"> <a href="https://github.com/lekevin678" target="_blank"> GitHub </a> </li>
+                    <li class="footer-item"> <a href="https://www.linkedin.com/in/kevin-le-18483a175/" target="_blank"> LinkedIn</a> </li>
+                </footer>
+                </div>
+
+                <div class="project-info-backdrop"></div>
+
+                <div class="project-info">
+                    <h1 class="content-title start"> Lets Get Started </h1>
+                    <p class="content-main">
+                        Click on a project from the left menu to read more about it. To view the code, a link to the project on GitHub will be provided. Below is also a direct link to my GitHub. <br><br><br><br>
+
+                        Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/lekevin678" target="_blank" style="color: #3e76c9;font-weight: 600;"> <i class="fab fa-github"></i> lekevin678 </a> 
+                    </p>
+                </div>
+
+                <div class="project-info">
+                    <a href="https://github.com/lekevin678/Health-is-Wealth" target="_blank"> <h1 class="content-title"> Health is Wealth&nbsp;<i class="fab fa-github"></i> </h1> </a>
+                    <div class="content-main"> 
+                        Health is Wealth was designed with college students in mind. During my collegiate years, maintaining a healthy lifestyle on a low budget was always a goal. I struggled to find new meals that met both my health goals and my budget. This resulted in my meals consisting of brown rice, chicken breasts, and broccoli; again and again and again. Eventually, I got sick of these meals and would look on the internet for recipe ideas; however, most of these recipe websites had long paragraphs explaining the story behind the recipe and little to no information on its health benefits and price. This sparked the idea to create Health is Wealth.<br><br>
+
+                        The idea of Health is Wealth is to cut out all the unnecessary information about the recipe and only show information related to its healthiness (ingredients, health grade, price, etc.). Using what I have learned in my computer science courses and the use of the Spoonacular API, I was able to create Health is Wealth. Only the most important information is present which allows users to easily identify how healthy a recipe is and if it matches their health goals.<br>
+
+                        <div class="image-container">
+                            <img src="/images/healthiswealth/recipe.png" class="project-image">
+                            <div class="image-des"> Example page for a recipe.</div> 
+                        </div> <br>
+
+                        Also, an ingredients checklist is given for all recipes along with an estimated cost. With this checklist, a user can easily see how much it will cost them to make the recipe. If a user already has a particular ingredient, the user can check it off the list and the estimated cost for that ingredient will be deducted from the overall cost.<br>
+
+                        <div class="image-container">
+                            <img src="/images/healthiswealth/checklist.png" class="project-image">
+                            <div class="image-des"> Ingredients checklist. Total estimated price is updated when the user checks off an ingredient.</div>
+                        </div><br>
+
+                        Health is Wealth also provides an "Advanced Search" feature which allows its users to find recipes that match their specific health goals and diets. For example, users can filter out recipes based on the minimum or maximum amount of carbs the recipe can have, find recipes that follow vegan restrictions, type of food it is, and much more.<br>
+
+                        <div class="image-container">
+                            <img src="/images/healthiswealth/advsearch.png" class="project-image">
+                            <div class="image-des"> Advanced search page.</div>
+                        </div><br>
+
+                        <div class="image-container">
+                            <img src="/images/healthiswealth/advsearch-ex.png" class="project-image">
+                            <div class="image-des"> Example of what a user can do on the advanced search page. In this example, the user is searching for Mexican or Thai food, and wants to exclude peanuts from the recipe's ingredients</div>
+                        </div><br>
+
+                        <div class="image-container">
+                            <img src="/images/healthiswealth/searchresults.png" class="project-image">
+                            <div class="image-des"> Example search result.</div>
+                        </div><br>
+
+
+                        Living a healthy lifestyle is essential to living a happy life. And the most important (and toughest) aspect of living a healthy lifestyle is feeding your body the right foods. Health is Wealth has always been a passion project of mine because I have lived the struggle of finding the right foods to stay healthy at a cheap price. I hope Health is Wealth is able to change many peoples lives and help them achieve their health goals. <br><br>
+
+                        STAYING ACTIVE, EATING WELL, BEING HYDRATED, FREE OF DISEASES, ALL WHILE BEING MENTALLY STRONG IS PRICELESS. HEALTH IS WEALTH. <br><br><br><br>
+
+                        Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/lekevin678/Health-is-Wealth" target="_blank" style="color: #3e76c9;font-weight: 600;"> <i class="fab fa-github"></i> Health is Wealth </a> 
+                    </div>
+                
+                </div>
+
+                <div class="project-info">
+                    <a href="https://github.com/lekevin678/Movie-Vault" target="_blank"> <h1 class="content-title"> Movie Vault&nbsp; <i class="fab fa-github"></i></h1> </a>
+                    <div class="content-main">
+                        I worked in a team of four to create the web application Movie Vault. Movie Vault allows its users to sign up and/or log into their account to review films. The web application pulls information about the film, reviews, and accounts from an SQL relational database. Since this project was meant to focus on gathering information from a relational database using SQL, my team focused more on implementing SQL queries than usability.<br>
+
+                        <div class="image-container">
+                            <img src="/images/movievault/database.png" class="project-image">
+                            <div class="image-des"> The structure of our relational database.</div>
+                        </div><br>
+
+                        A user can sign into their account by entering a username and password. A user can create an account by providing a name, username, password, e-mail, and a company if they have one. If a user has a company listed, then they are considered a critic. If they do not, then they are considered a member. Both are uniquely identified with their email and account ID. <br><br>
+
+                        <div class="image-container">
+                            <img src="/images/movievault/account.png" class="project-image">
+                            <div class="image-des"> Example page of an account.</div>
+                        </div><br>
+
+                        A member has an account that contains all their rating entries. An account is uniquely identified by the accountID and has a unique username associated with it. <br><br>
+
+                        A user submits a review by going to their account and clicking on “Create Rating Entry". A review will have a rating (out of 100) and an explanation. A user can only have one review per movie. A user is able to create, update, and delete reviews.
+
+                        A movie will have many reviews from critics and members and will have two scores based on those reviews, one score for critic ratings and one score for member ratings. These scores will be calculated by finding the average rating for its respective reviews. The scores are dynamically calculated by the current reviews for that movie. Meaning if a member deletes their rating entry for a movie, the overall rating for that movie will change accordingly. This will also happen when a user creates a review or updates a review. <br><br>
+
+                        <div class="image-container">
+                            <img src="/images/movievault/film.png" class="project-image">
+                            <div class="image-des"> Example page for a movie.</div>
+                        </div><br>
+
+                        Our website contains a list of movies that a user can click on to view details about that movie such as cast, director, producer, reviews and ratings.<br><br>
+
+                        A user can be a part of a group, so they can discuss movies with other users. They can join a group, leave a group, create a group, delete a group, and/or edit the name of the group. The latter 2 require an Admin password which has been hardcoded into the JavaScript code. <br><br>
+
+                        Information is created/read/updated/deleted using SQL queries, triggers, functions, and procedures from a relational database.
+
+                        <br><br><br><br>
+                        
+                        Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/lekevin678/Movie-Vault" target="_blank" style="color: #3e76c9;font-weight: 600;"> <i class="fab fa-github"></i> Movie Vault </a> <br><br>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <a href="https://github.com/lekevin678/Intro-to-Security" target="_blank"> <h1 class="content-title">  Intro to Security&nbsp; <i class="fab fa-github"></i></h1> </a>
+                    <div class="content-main">
+                        These projects were done for the course "Intro to Security". Topics such as encryption/decryption and cryptographic-hash are used in these projects. <br><br>
+
+                        <a href="https://github.com/lekevin678/Intro-to-Security/tree/main/Bloom%20Filter" target="_blank"> <h1 class="content-sub-title"> Bloom Filter &nbsp;<i class="fab fa-github"></i> </h1> </a>
+                        This project creates two Bloom Filters, one uses 3 hash functions and one uses 5 hash functions. To initialize the Bloom Filters, a list of common passwords is ran through the hash functions. With the corresponding bits flipped, this program will test an input file with a list of words to see if a word is either not in the Bloom Filter or if it might be in the Bloom Filter ('might' due to the posibility of false positives). <br><br>
+
+                        <a href="https://github.com/lekevin678/Intro-to-Security/tree/main/Dictionary-Attack" target="_blank"> <h1 class="content-sub-title"> Dictionary Attack&nbsp; <i class="fab fa-github"></i></h1> </a>
+                        For this project, I was given a plaintext and a ciphertext. My goal was to write a program to find out the key. I was given the below hint:
+
+                        <p style="font-style: italic;">AES-128-CBC is used to generate the ciphertext from the plaintext, and the numbers in the IV are all zeros (not the ASCII character ‘0’). The key used to encrypt this plaintext is an English word shorter than 16 characters; the word that can be found from a typical English dictionary. Since the word has less than 16 characters (i.e. 128 bits), space characters (hexadecimal value 0x20) are appended to the end of the word to form a key of 128 bits. </p>
+
+                        <a href="https://github.com/lekevin678/Intro-to-Security/tree/main/Google%20Authenticator%20TOTP" target="_blank"> <h1 class="content-sub-title"> Google Authenticator (Time-based One-time Password Algorithm)&nbsp; <i class="fab fa-github"></i></h1> </a>
+                        Google Authenticator (GA) is a two-step verification service using the Time-based One-time Password (TOTP) Algorithm  and HMAC-based One-time Password algorithm, for authenticating users of software applications. For this project, I was tasked to implement GA and TOTP. <br><br>
+
+                        <a href="https://github.com/lekevin678/Intro-to-Security/tree/main/Hash-Resistance-Properties" target="_blank"> <h1 class="content-sub-title"> Hash Resistance Properties&nbsp; <i class="fab fa-github"></i></h1> </a>
+                        In this project, I was tasked to create a program that find sthe average number of trials to break the weak-resistance and strong-resistance properties of SHA-256. Since it would take billions of trials to break these properties, only the first 24 bits of the hashes were tested. The program runs weak-resistance and strong-resistance 100 times each and then finds the average number of trials to break that property.<br><br>
+
+                        <br><br>
+                        Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/lekevin678/Intro-to-Security" target="_blank" style="color: #3e76c9;font-weight: 600;"> <i class="fab fa-github"></i> Intro to Security </a> 
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <a href="https://github.com/lekevin678/Operating-Systems-I" target="_blank"> <h1 class="content-title"> Operating Systems I&nbsp;<i class="fab fa-github"></i></h1> </a>
+                    <div class="content-main">
+                        These projects were done for the course "Operating Systems I". Topics such as threads/mutex, processes, bash commands, daemons and more are used in these projects. <br><br>
+
+                        <a href="https://github.com/lekevin678/Operating-Systems-I/tree/main/assignment1-matrix" target="_blank"> <h1 class="content-sub-title"> Matrix Operations&nbsp;<i class="fab fa-github"></i></h1> </a>
+                        This project uses bash commands to do matrix operations. The program can add two matrices, multiply two matrices, find the dimension of a matrix, the mean of a matrix, and the transpose of a matrix. <br><br>
+
+                        <a href="https://github.com/lekevin678/Operating-Systems-I/tree/main/assignment2-adventure" target="_blank"> <h1 class="content-sub-title"> Room Adventure&nbsp;<i class="fab fa-github"></i></h1> </a>
+                        This assignment is split up into two C programs. The first program will be contained in the file named "lekevi.buildrooms.c", which when compiled and ran, creates a series of files that hold descriptions of the in-game rooms and how the rooms are connected.<br><br>
+
+                        The second program is called "lekevi.adventure.c" and when compiled and ran, provides an interface for playing the game using the most recently generated rooms.<br><br>
+
+                        In the game, the player will begin in the "starting room" and will win the game automatically upon entering the "ending room", which causes the game to exit, displaying the path taken by the player.<br><br>
+
+                        During the game, the player can also enter a command that returns the current time - this functionality utilizes mutexes and multithreading.<br><br>
+
+                        <a href="https://github.com/lekevin678/Operating-Systems-I/tree/main/assignment3-smallsh" target="_blank"> <h1 class="content-sub-title"> Small Shell &nbsp;<i class="fab fa-github"></i></h1> </a>
+                        In this project, I wrote a C program to create my own shell, called Small Shell. The shell runs command line instructions and return the results similar to other shells, but without many of their fancier features. <br><br>
+
+                        The shell allows for the redirection of standard input and standard output and it supports both foreground and background processes (controllable by the command line and by receiving signals).<br><br>
+
+                        The shell supports three built in commands: exit, cd, and status. Other commands are ran through execvp(). It also support comments, which are lines beginning with the # character.<br><br>
+
+                        The shell also supports the following signals:<br>
+
+                        A CTRL-C command from the keyboard sends a SIGINT signal <br>
+                        A CTRL-Z command from the keyboard sends a SIGTSTP signal<br><br>
+
+                        <a href="https://github.com/lekevin678/Operating-Systems-I/tree/main/assignment4-OTP" target="_blank"> <h1 class="content-sub-title"> One Time Pad (Server & Client) &nbsp;<i class="fab fa-github"></i></h1> </a>
+                        This project encrypts and decrypts information using a simple One Time Pad (OTP) system. <br><br>
+
+                        Keygen creates a key of a specified length.<br><br>
+
+                        There are two programs running in the background acting as daemons, otp_enc_d for encryption and otp_dec_d for decryption.<br><br>
+
+                        otp_enc connects and sends otp_enc_d the message and key needed to encrypt. otp_enc_d collects all of this information and encrypts the message with the key. It then sends otp_enc back the encrypted message and otp_enc will print it.<br><br>
+
+                        otp_dec connects and send otp_dec_d the ciphertext and key needed to decrypt. otp_dec_d collects all of this information and decrypts the ciphertex with the key. It will then send otp_dec back the plaintext message and otp_dec will print it.<br><br>
+                    
+
+                        <br><br>
+                        Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/lekevin678/Operating-Systems-I" target="_blank" style="color: #3e76c9;font-weight: 600;"> <i class="fab fa-github"></i> Operating Systems I </a> 
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <a href="https://github.com/lekevin678" target="_blank"> <h1 class="content-title"> More&nbsp;<i class="fab fa-github"></i></h1> </a>
+                    <p class="content-main">
+                        More projects of mine can be found in the Github link below!<br><br><br><br>
+
+                        Github: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/lekevin678" target="_blank" style="color: #3e76c9;font-weight: 600;"> <i class="fab fa-github"></i> lekevin678 </a> 
+                    </p>
+                </div>
+
+            </section>
+        </div>
+
+     </div>
+</body>
+</html>

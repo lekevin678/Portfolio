@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" media="screen"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <meta charset="utf-8" />
+    <title> KEVIN LE | Home</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+
+            <header class="top-bar">
+                <div class="main-name"> <a href="/"> KEVIN LE </a> </div>
+                <div class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"> <a href="/projects"> Projects </a> </li>
+                        <li class="nav-item"> <a href="/contact" style="text-decoration: underline;"> Contact Me </a> </li>
+                    </ul>
+                </div>
+            </header>
+        
+            <a href="#content">
+                <div class="main-section"> 
+                    <h1 class="main-content name"> Contact Me </h1>
+                    <h2 class="main-content info"> My contact information is below. Feel free to contact me!</h2>
+                </div>
+            </a>
+            
+
+            <section id= "content">
+                <div class="content-contact">
+                    EMAIL - lekevin678@gmail.com <br><br>
+                    LinkedIn - <a href="https://www.linkedin.com/in/kevinle678/" target="_blank"> linkedin/lekevin678 </a>
+                </div>
+
+            </section>
+
+            <footer class="footer">
+                <li class="footer-item"> lekevin678@gmail.com </li>
+                <li class="footer-item"> <a href="https://github.com/lekevin678" target="_blank"> GitHub </a> </li>
+                <li class="footer-item"> <a href="https://www.linkedin.com/in/kevinle678/" target="_blank"> LinkedIn</a> </li>
+            </footer>
+
+
+     </div>
+</body>
+</html>
